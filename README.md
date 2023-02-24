@@ -414,7 +414,7 @@ RESULT:
 – question 17
 Write a query to calculate the average salary distribution based on the continent and country. Take data from the employee record table.
 
-select * from emp_record_table
+
 SELECT first_name,salary,country,continent,
 AVG(salary) OVER(PARTITION BY continent) avg_cont_sal,salary,
 AVG(salary) OVER(PARTITION BY country) avg_country_sal
